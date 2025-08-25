@@ -1,0 +1,24 @@
+"use strict";
+
+var fruits = ["Banana", "Orange", "Apple", "Mango", "Watermelon"];
+console.log("Original array element:- ".concat(fruits));
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("First element in array is : ".concat(fruits[0]));
+console.log("Last element in array is : ".concat(fruits[fruits.length - 1]));
+fruits.unshift("Papaya");
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("Papaya adding Before Banana:- ".concat(fruits));
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("Removing Mango from array :- ".concat(fruits.splice(4, 1)));
+fruits.push("Pineapple");
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("Add element Pineapple at Last: ".concat(fruits));
+fruits.splice(4, 0, "Dragon Fruit");
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("Add element before water melon: ".concat(fruits));
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("Replace Orange with kiwi: ".concat(fruits[2] = "Kiwi"));
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("Element stating from index 1 to 4 is : ".concat(fruits.slice(1, 4)));
+console.log("-------------------------------------------------------------------------------------------------");
+console.log("Only last three element is : ".concat(fruits[fruits.length - 3], ",").concat(fruits[fruits.length - 2], ",").concat(fruits[fruits.length - 1]));

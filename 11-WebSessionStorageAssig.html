@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Storage Assignment</title>
+</head>
+<body>
+  <h2>Local Storage - Web Storage Methods</h2>
+
+  <script>
+    
+    window.localStorage.setItem("name", "Avdhut Durgade"); 
+    window.localStorage.setItem("city", "Pune");              
+    window.localStorage.setItem("pinCode", "412305");           
+    window.localStorage.setItem("district", "Pune District");   
+
+ 
+    localStorage.removeItem("city");
+
+
+    console.log("📌 Local Storage Data:");
+    for (let i = 0; i < localStorage.length; i++) {
+      let key = localStorage.key(i);
+      let value = localStorage.getItem(key);
+      console.log(key + " → " + value);
+    }
+  </script>
+</body>
+</html>

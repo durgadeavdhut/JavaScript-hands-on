@@ -71,3 +71,51 @@ var employee = {
   }
 };
 employee.details();
+console.log("======== Traverse the object ==========");
+var emp = {
+  fullName: "Stew Jobs",
+  age: 23,
+  isMarried: false
+};
+
+for (var key in emp) {
+  var value = emp[key];
+  console.log("Key: ".concat(key, ", Value: ").concat(value));
+}
+
+console.log("====== Check is the property available or not ?=======");
+console.log("age" in emp);
+console.log("city" in emp);
+console.log("========= Object freezing ==============");
+var stud = {
+  fullName: "Stew Jobs",
+  age: 23,
+  isMarried: false
+}; // stud = {
+// }
+// console.log(stud);
+
+Object.freeze(stud);
+stud.age = 100;
+console.log(stud);
+console.log("========== Object.assign() ===========");
+console.log("======== 1. Cloning an object =======");
+var personStew = {
+  fullName: "Stew Jobs",
+  age: 23,
+  isMarried: false
+};
+var clonedObject = Object.assign({}, personStew);
+console.log(clonedObject);
+console.log("======== 2. Merge the object =======");
+var address = {
+  city: "Pune",
+  country: "India",
+  pin: "411057"
+}; // Object.assign(personStew, address);
+// console.log(personStew);
+// Object.assign(address, personStew);
+// console.log(address);
+
+var mergedObject = Object.assign({}, personStew, address);
+console.log(mergedObject);

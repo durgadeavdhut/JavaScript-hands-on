@@ -25,3 +25,9 @@ function wordLength(word) {
 console.log(`"JavaScript" length is ${wordLength("JavaScript")}`);
 console.log(`"developer" length is ${wordLength("developer")}`);
 console.log(`"Google" length is ${wordLength("Google")}`);
+
+
+console.log(playerRohit instanceof Player);
+
+const date = new Date();
+console.log(date);
